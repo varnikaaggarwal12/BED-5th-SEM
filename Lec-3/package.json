@@ -1,0 +1,17 @@
+{
+  "name": "sum-varnika2557",
+  "version": "1.0.0",
+  "description": "\"This package do nothing\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "\"varnika\"",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "hbs": "^4.2.0"
+  }
+}
