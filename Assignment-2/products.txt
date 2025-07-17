@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Iphone 16",
+    "price": 100000,
+    "quantity": 93
+  },
+  {
+    "name": "Samsung",
+    "price": 70000,
+    "quantity": 1
+  },
+  {
+    "name": "OnePlus",
+    "price": 52000,
+    "quantity": 1
+  }
+]
