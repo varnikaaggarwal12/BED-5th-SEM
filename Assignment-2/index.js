@@ -1,5 +1,4 @@
 const fs = require("fs");
-
 const productName = process.argv[2];
 const userName = process.argv[3];
 fs.readFile("products.txt", "utf-8", (err, pdata) => {
