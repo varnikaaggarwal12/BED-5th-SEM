@@ -9,7 +9,7 @@ const fs=require("fs");
 //        let users2=JSON.parse(data2);
 //        console.log(users2)
 //        let allusers=users1.concat(users2)
-//        console.log("allusers")
+//        console.log("allusLec-9ers")
 //         fs.writeFile("./all-users.txt",JSON.stringify(allusers),function(err){
 //             if(err) return console.log(err);
 //             console.log("done!");
