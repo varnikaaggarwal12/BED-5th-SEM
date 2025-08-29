@@ -1,0 +1,33 @@
+const express = require("express");
+const User = require("../models/User");
+
+const router = express.Router();
+
+// Signup
+router.post("/signup", async (req, res) => {
+  try {
+    const { name, email, password } = req.body;
+    let user = new User({ name, email, password });
+    await user.save();
+    res.json({ success: true, message: "User signed up successfully!" });
+  } catch (err) {
+    res.json({ success: false, message: "Error signing up" });
+  }
+});
+
+// Login
+router.post("/login", async (req, res) => {
+  try {
+    const { email, password } = req.body;
+    let user = await User.findOne({ email, password });
+    if (user) {
+      res.json({ success: true, message: "Login successful!", userId: user._id });
+    } else {
+      res.json({ success: false, message: "Invalid credentials" });
+    }
+  } catch (err) {
+    res.json({ success: false, message: "Error logging in" });
+  }
+});
+
+module.exports = router;
