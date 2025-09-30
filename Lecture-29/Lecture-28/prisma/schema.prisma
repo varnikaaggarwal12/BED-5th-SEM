@@ -17,4 +17,12 @@ model User{
   id Int @id @default(autoincrement())
   email String @unique
   name String?
+  tweets Tweet[]
+}
+model Tweet{
+  id Int @id @default(autoincrement())
+  userId Int
+  date DateTime @default(now())
+  body String
+  user User @relation(fields: [userId],references: [id],onDelete: Cascade)
 }
